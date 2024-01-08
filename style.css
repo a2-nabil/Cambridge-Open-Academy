@@ -13,14 +13,12 @@
   width: 100%;
   height: 162px;
   border-radius: 5px;
-  border-radius: 5px;
   border: 1px solid #e5e8ec;
   background: #fff;
   padding: 8px 20px 8px 8px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  column-gap: 12px;
+  gap: 12px;
   transition: all 0.3s ease;
 }
 .a2n_bs-card .a2n_heading {
@@ -96,14 +94,19 @@
   line-height: 16.8px;
   text-transform: capitalize;
 }
+.a2n_content_sec {
+  width: 65%;
+}
 .a2n_image_sec {
-  width: 144px;
+  width: 35%;
   height: 100%;
+  overflow: hidden;
 }
 .a2n_image_sec img {
   width: 100%;
   height: 100%;
   border-radius: 3px;
+  object-fit: cover;
 }
 .a2n_offer-img {
   position: absolute;
@@ -257,9 +260,6 @@
 @media (max-width: 376px) {
   .a2n_bs-card {
     padding: 6px;
-  }
-  .a2n_image_sec {
-    width: auto;
   }
   .a2n_bs-card .a2n_cat {
     padding: 4px;
